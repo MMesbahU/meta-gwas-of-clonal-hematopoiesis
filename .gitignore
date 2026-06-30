@@ -1,0 +1,12 @@
+# .txt
+.ipynb_checkpoints/
+# R
+.Rhistory
+.RData
+.Rproj.user/
+.DS_Store
+# genomics
+.vcf.gz
+.bcf
+.cram
+.bgen
