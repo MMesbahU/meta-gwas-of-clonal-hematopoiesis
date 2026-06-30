@@ -1,0 +1,8 @@
+jobname pval_fdr05 n_snps nsnpGWASsig nsnpsFDRsig cojoinput
+mixedM4.CHIP  5.19733e-06 17767800 982 1848 in_cojo_eaf001_min2Studies.8March2022.lifted_hg37.GWAMA.mixedSamples.meta_CHIP.allTOPmed_EUR_UKB_MGB_BioVU.tsv
+mixedM4.TET2 2.57976e-07 17724873 54 93 in_cojo_eaf001_min2Studies.8March2022.lifted_hg37.GWAMA.mixedSamples.meta_TET2.allTOPmed_EUR_UKB_MGB_BioVU.tsv
+mixedM4.DNMT3A 6.63713e-06 17711925 1474 2352 in_cojo_eaf001_min2Studies.8March2022.lifted_hg37.GWAMA.mixedSamples.meta_DNMT3A.allTOPmed_EUR_UKB_MGB_BioVU.tsv
+meta4.TET2 1.92066e-07 21455227 51 94 in_cojo_eaf001_min2Studies.8March2022.lifted_hg37.GWAMA.meta_TET2.allsamples_topmed_ukbb_mgbb_BioVU.tsv
+meta4.DNMT3A 5.74249e-06 21378242 1581 2456 in_cojo_eaf001_min2Studies.8March2022.lifted_hg37.GWAMA.meta_DNMT3A.allsamples_topmed_ukbb_mgbb_BioVU.tsv
+eurOnly.M4 5.8818e-06 14696075 812 1741 in_cojo_eaf001_min2Studies.8March2022.lifted_hg37.GWAMA.EUR_only_CHIP_GWAS.TopMedUKbbMGbbBioVU.tsv
+meta4.CHIP 4.87686e-06 21331331 1146 2083 in_cojo_eaf001_min2Studies.8March2022.lifted_hg37.GWAMA.meta_CHIP.allsamples_topmed_ukbb_mgbb_BioVU.tsv
