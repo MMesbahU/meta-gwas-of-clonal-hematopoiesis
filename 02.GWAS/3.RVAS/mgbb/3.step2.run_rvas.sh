@@ -1,7 +1,13 @@
 #!/bin/bash
 
-# Jun 29, 2026
+## July 2, 2026
+# AAF: [5%,1%,0.1%,0.01%,0.001%]
+# qsub -t 1-22 -wd /medpop/esp2/mesbah/projects/Meta_GWAS/rerun/mgbb53k/rvas/tmpdir -R y -l h_vmem=20G -l h_rt=10:00:00 -pe smp 2 -binding linear:2 -N step2.mgbb_rvas.nochr /medpop/esp2/mesbah/tools/meta-gwas-of-clonal-hematopoiesis/02.GWAS/3.RVAS/mgbb/3.step2.run_rvas.sh /medpop/esp2/mesbah/projects/Meta_GWAS/rerun/mgbb53k/rvas/step2 2 "0.05,0.01,0.001,0.0001,0.00001" /broad/hptmp/mesbah/dataset/mesbah_medpop_esp/GWAS_CHIP/MGBB53k/wes/pgen/MGB_53K_WES_genotype_variant_sample_QCed /medpop/esp2/mesbah/projects/Meta_GWAS/rerun/mgbb53k/mgbb53k.imp_new.noRel_sk.Feb2024.tsv.gz "hasCHvaf02,hasCHvaf10,hasDNMT3A,hasTET2,hasASXL1,hasSF,hasDDR" "PC{1:10},Age_Genotyping,sqrAge_Genotyping" "Sex,ancestry_pred,Batch_CHIP_call" /broad/hptmp/mesbah/dataset/mesbah_medpop_esp/GWAS_CHIP/MGBB53k/MultiANC/step1/NULL_MODEL_pred.modified.list "/medpop/esp2/mesbah/projects/Meta_GWAS/rerun/mgbb53k/rvas/mask_files/chr" ".MGB_53K_WES.vep.hc_LOF.annotation" "/medpop/esp2/mesbah/projects/Meta_GWAS/rerun/mgbb53k/rvas/mask_files/nochr" ".MGB_53K_WES.vep.hc_LOF.setlist" "/medpop/esp2/mesbah/projects/Meta_GWAS/rerun/mgbb53k/rvas/mask_files/lof.mask" "MGB_WES_RVAS" "MGB_53K_WES.RVAS_out_firth_aaf00001.nochr"
 
+## Jun 30, 2026
+# qsub -t 1-22 -wd /medpop/esp2/mesbah/projects/Meta_GWAS/rerun/mgbb53k/rvas/tmpdir -R y -l h_vmem=20G -l h_rt=10:00:00 -pe smp 2 -binding linear:2 -N step2.mgbb_rvas.nochr /medpop/esp2/mesbah/tools/meta-gwas-of-clonal-hematopoiesis/02.GWAS/3.RVAS/mgbb/3.step2.run_rvas.sh /medpop/esp2/mesbah/projects/Meta_GWAS/rerun/mgbb53k/rvas/step2 2 "0.05,0.01,0.001,0.0001" /broad/hptmp/mesbah/dataset/mesbah_medpop_esp/GWAS_CHIP/MGBB53k/wes/pgen/MGB_53K_WES_genotype_variant_sample_QCed /medpop/esp2/mesbah/projects/Meta_GWAS/rerun/mgbb53k/mgbb53k.imp_new.noRel_sk.Feb2024.tsv.gz "hasCHvaf02,hasCHvaf10,hasDNMT3A,hasTET2,hasASXL1,hasSF,hasDDR" "PC{1:10},Age_Genotyping,sqrAge_Genotyping" "Sex,ancestry_pred,Batch_CHIP_call" /broad/hptmp/mesbah/dataset/mesbah_medpop_esp/GWAS_CHIP/MGBB53k/MultiANC/step1/NULL_MODEL_pred.modified.list "/medpop/esp2/mesbah/projects/Meta_GWAS/rerun/mgbb53k/rvas/mask_files/chr" ".MGB_53K_WES.vep.hc_LOF.annotation" "/medpop/esp2/mesbah/projects/Meta_GWAS/rerun/mgbb53k/rvas/mask_files/nochr" ".MGB_53K_WES.vep.hc_LOF.setlist" "/medpop/esp2/mesbah/projects/Meta_GWAS/rerun/mgbb53k/rvas/mask_files/lof.mask" "MGB_WES_RVAS" "MGB_53K_WES.RVAS_out_firth_aaf0001.nochr"
+
+# Jun 29, 2026
 # qsub -t 1-22 -wd /medpop/esp2/mesbah/projects/Meta_GWAS/rerun/mgbb53k/rvas/tmpdir -R y -l h_vmem=20G -l h_rt=10:00:00 -pe smp 2 -binding linear:2 -N step2.mgbb_rvas /medpop/esp2/mesbah/tools/meta-gwas-of-clonal-hematopoiesis/02_2.RVAS/step2.run_rvas.sh /medpop/esp2/mesbah/projects/Meta_GWAS/rerun/mgbb53k/rvas/step2 2 "0.05,0.01,0.001,0.0001" /broad/hptmp/mesbah/dataset/mesbah_medpop_esp/GWAS_CHIP/MGBB53k/wes/pgen/MGB_53K_WES_genotype_variant_sample_QCed /medpop/esp2/mesbah/projects/Meta_GWAS/rerun/mgbb53k/mgbb53k.imp_new.noRel_sk.Feb2024.tsv.gz "hasCHvaf02,hasCHvaf10,hasDNMT3A,hasTET2,hasASXL1,hasSF,hasDDR" "PC{1:10},Age_Genotyping,sqrAge_Genotyping" "Sex,ancestry_pred,Batch_CHIP_call" /broad/hptmp/mesbah/dataset/mesbah_medpop_esp/GWAS_CHIP/MGBB53k/MultiANC/step1/NULL_MODEL_pred.modified.list "/medpop/esp2/mesbah/tools/meta-gwas-of-clonal-hematopoiesis/02_2.RVAS/mask_files/chr" ".MGB_53K_WES.vep.hc_LOF.annotation" "/medpop/esp2/mesbah/tools/meta-gwas-of-clonal-hematopoiesis/02_2.RVAS/mask_files/chr" ".MGB_53K_WES.vep.hc_LOF.setlist" "/medpop/esp2/mesbah/tools/meta-gwas-of-clonal-hematopoiesis/02_2.RVAS/mask_files/lof.mask" "MGB_WES_RVAS" "MGB_53K_WES.RVAS_out_firth_aaf0001.chr"
 
 ###
@@ -16,15 +22,23 @@
 
 ##########################################################################
 source /broad/software/scripts/useuse
-use Anaconda
+
+source /home/unix/muddin/.bashrc
+
+use Anaconda3
+
 ## to install
 # conda create -n regenie_env -c conda-forge -c bioconda regenie
-## Update from v3.1g to v3.1.3g
+## Update from v3.1g to v3.1.3g to 4.1
 # conda update -n regenie_env -c conda-forge -c bioconda regenie
 # conda update -n base conda
 # source activate regenie_env
-source activate /home/unix/muddin/micromamba/envs/regenie_env
+# source activate /home/unix/muddin/micromamba/envs/regenie_env
+# conda init bash
 
+conda activate regenie_env
+
+# conda deactivate
 #########################################################################
 chr=${SGE_TASK_ID}
 outdir=${1}
